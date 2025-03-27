@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maze Solver</h1>
+        
+        <div class="controls">
+            <select id="algorithm" class="algorithm-select">
+                <option value="bfs">Breadth-First Search (BFS)</option>
+                <option value="dfs">Depth-First Search (DFS)</option>
+                <option value="iddfs">Iterative Deepening DFS</option>
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+                <option value="astar">A* Search</option>
+                <option value="bidirectional_bfs">Bidirectional search</option>
+            </select>
+            <div class="button-group">
+                <button id="solve-btn" class="btn solve">Solve Maze</button>
+                <button id="clear" class="btn clear">Clear</button>
+            </div>
+        </div>
+
+        <canvas id="mazeCanvas"></canvas>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="color-box start"></div>
+                <span>Start Point</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box end"></div>
+                <span>End Point</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box wall"></div>
+                <span>Wall</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box visited"></div>
+                <span>Visited Nodes</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box path"></div>
+                <span>Final Path</span>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p>🖱️ Left Click: Place Start/End points & Draw Walls</p>
+            <p>🖱️ Right Click: Remove Start/End points</p>
+            <p>🚀 Select algorithm and click 'Solve Maze' to visualize</p>
+            <p>🧹 Click 'Clear' to reset the grid</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
