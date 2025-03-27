@@ -6,7 +6,13 @@
 
 A visual simulation tool for pathfinding algorithms with real-time maze customization and algorithm comparison capabilities.
 
-![Maze Solver Demo](Results\A_star_search.png)(Results\Bidirectional_search.png)(Results\Dijkstra.png)
+## Visual Demo
+
+<div align="center">
+  <img src="Results/A_star_search.png" width="30%" alt="A*">
+  <img src="Results/Bidirectional_search.png" width="30%" alt="Bidirectional"> 
+  <img src="Results/Dijkstra.png" width="30%" alt="Dijkstra">
+</div>
 
 ## Features
 
